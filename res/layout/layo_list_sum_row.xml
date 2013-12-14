@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp" >
+
+    <TextView
+        android:id="@+id/layo_list_sum_row_sku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="@string/str_sku" />
+
+    <TextView
+        android:id="@+id/layo_list_sum_row_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/layo_list_sum_row_sku"
+        android:layout_alignBottom="@+id/layo_list_sum_row_sku"
+        android:layout_toLeftOf="@+id/layo_list_sum_row_currency"
+        android:text="@string/str_amount" />
+
+    <TextView
+        android:id="@+id/layo_list_sum_row_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layo_list_sum_row_amount"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/layo_list_sum_row_amount"
+        android:text="@string/str_currency" />
+    
+</RelativeLayout>
